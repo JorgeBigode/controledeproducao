@@ -1,0 +1,54 @@
+.cliente-bloco {
+    border: 1px solid #009879;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+    text-transform: uppercase;
+    display: none;
+    height: 95%;
+}
+
+.cliente-bloco.active {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cliente-bloco h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-left: 10px;
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bi {
+    width: 24px;
+    height: 24px;
+}
+
+svg.bi.bi-caret-left-fill {
+fill: #000;
+}
+
+.prev-btn:hover .bi,
+.next-btn:hover .bi {
+    fill: #007bff;
+    /* Cor ao passar o mouse */
+}
+
+

@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(20, 147, 22), rgb(17, 54, 7));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 20 0 500px;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: calc(100vh - 115px);
+    margin: 3px;
+    padding: 10px;
+    border-radius: 8px 8px 8px;
+}
+
+
+#logo img {
+    max-width: 100px;
+}
+
+#openMenu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 2000;
+}
+
+#menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    background-color: #575757;
+}
+
+#closeMenu {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.submenu {
+    padding: 10px;
+}
+
+.submenu-content {
+    padding-left: 20px;
+}
+
+.tabelas-container {
+    display: flex;
+    gap: 20px;
+    /* Espaço entre as tabelas */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table thead th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2f2;
+    color: black;
+}
+
+tr {
+    text-align: center;
+}
+
+svg {
+    cursor: pointer;
+}
+
+.buscar-box {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    transition: width 0.5s;
+}
+
+.buscar-box.ativar {
+    width: 300px;
+    height: 30px;
+    margin-right: 5px;
+
+}
+
+.buscar-box.ativar .lupa-buscar {
+    height: 30px;
+}
+
+.buscar-box .lupa-buscar {
+    min-width: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buscar-box .input-buscar {
+    position: relative;
+    width: calc(100% - 120px);
+    height: 100%;
+}
+
+.buscar-box .input-buscar input {
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.btn-fechar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+}
+
+.buscar-box.ativar .btn-fechar {
+    display: flex;
+}

@@ -1,0 +1,31 @@
+
+.search-section {
+    margin-bottom: 20px; 
+    border: 3px solid darkolivegreen;/* Espaço entre as seções de busca */
+}
+
+/* Estilização das caixas de input */
+.inputBox-3 {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.inputBox-3 input {
+    width: 100%;
+    padding: 10px;
+    padding-left: 40px; /* Espaço para o label dentro da caixa */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.inputBox-3 label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #666;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+}

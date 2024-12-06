@@ -1,0 +1,49 @@
+-- Inserindo permissões para o usuário com id = 1
+INSERT INTO permissao_edicao (id_usuario, campo) VALUES (1, 'data_programacao');
+INSERT INTO permissao_edicao (id_usuario, campo) VALUES (1, 'data_engenharia');
+
+-- Inserindo permissões para o usuário com id = 2
+INSERT INTO permissao_edicao (id_usuario, campo) VALUES (2, 'data_pcp');
+INSERT INTO permissao_edicao (id_usuario, campo) VALUES (2, 'data_producao');
+
+CREATE TABLE permissao_edicao (
+    id INT AUTO_INCREMENT PRIMARY KEY,         
+    tag INT NOT NULL
+);
+
+CREATE TABLE permissao_edicao (
+    id INT AUTO_INCREMENT PRIMARY KEY,         
+    tag INT NOT NULL,                   
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (id_usuario) REFERENCES usuarios(id)
+);
+
+
+ // Exibe informações para debug
+    $username = $_SESSION['username'] ?? 'Não logado';
+    echo "Usuário: " . htmlspecialchars($username) . " - Role: " . htmlspecialchars($role) . " - ID: " . htmlspecialchars($id) . " - Página atual: " . htmlspecialchars($paginaAtual) . "<br>";
+
+ssh -R [controledeproducao]:80:localhost:80 serveo.net
+
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE cliente_produto
+SET 
+    data_engenharia = CASE WHEN data_engenharia = '0000-00-00 00:00:00' THEN NULL ELSE data_engenharia END,
+    data_programacao = CASE WHEN data_programacao = '0000-00-00 00:00:00' THEN NULL ELSE data_programacao END,
+    data_pcp = CASE WHEN data_pcp = '0000-00-00 00:00:00' THEN NULL ELSE data_pcp END,
+    data_producao = CASE WHEN data_producao = '0000-00-00 00:00:00' THEN NULL ELSE data_producao END,
+    data_qualidade = CASE WHEN data_qualidade = '0000-00-00 00:00:00' THEN NULL ELSE data_qualidade END,
+    status_producao = CASE
+        WHEN data_engenharia IS NOT NULL AND data_programacao IS NULL THEN 'Aguardando Programação'
+        WHEN data_programacao IS NOT NULL AND data_pcp IS NULL THEN 'Aguardando PCP'
+        WHEN data_pcp IS NOT NULL AND data_producao IS NULL THEN 'Em Produção'
+        WHEN data_producao IS NOT NULL AND data_qualidade IS NULL THEN 'Produção Finalizada'
+        WHEN data_qualidade IS NOT NULL THEN 'Liberado para Expedição'
+        ELSE 'Sem status definido'
+    END
+WHERE id_vinculo IS NOT NULL;
+
+SET SQL_SAFE_UPDATES = 1;
+
+node server.js

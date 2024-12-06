@@ -1,0 +1,341 @@
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+
+.cliente-bloco {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.cliente-bloco.active {
+    background-color: #fff;
+}
+
+.select-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.active-block {
+    display: block;
+    /* Apenas o bloco ativo será exibido */
+}
+
+.navigation-buttons {
+    margin-bottom: 20px;
+}
+
+.navigation-buttons button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    margin-right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.navigation-buttons button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.navigation-buttons button:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:green;
+}
+
+.circle.status1 {
+    background-color: red;
+}
+
+.circle.status2 {
+    background-color: blue;
+}
+
+.circle.status3 {
+    background-color: yellow;
+}
+.circle.status4 {
+    background-color: #F0912B;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.linha-engenharia {
+    background-color: #F44343 !important;
+    /* Vermelho */
+}
+
+.linha-programacao {
+    background-color: #007BFF !important;
+    /* Azul */
+}
+
+.linha-pcp {
+    background-color: yellow !important;
+    /* Amarelo */
+}
+
+.linha-producao {
+    background-color: #F0912B !important;
+    /* Verde */
+}
+
+.linha-qualidade {
+    background-color: green !important;
+    /* Verde */
+}
+
+
+#header-expandable {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Logo e botão de alternância alinhados em dispositivos menores */
+@media (max-width: 768px) {
+    #header-expandable {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: #333;
+    }
+
+    /* Logo e botão de alternância alinhados */
+    #header-expandable #logo {
+        flex-grow: 1;
+    }
+
+    #toggleHeaderButton {
+        display: block;
+        font-size: 1.5em;
+        background: none;
+        border: none;
+        color: white;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    /* Menu lateral deslizante */
+    #side-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        /* Fora da tela inicialmente */
+        width: 250px;
+        height: 100%;
+        background-color: #333;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    #side-menu {
+        width: 200px;
+        height: 100%;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Menu aberto */
+    #side-menu.open {
+        left: 0;
+    }
+
+    /* Estilo dos itens do menu */
+    #side-menu a {
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+        width: 100%;
+    }
+
+    #side-menu a:hover {
+        background-color: #444;
+    }
+
+    /* Ocultar conteúdo do cabeçalho quando colapsado */
+    #header-expandable.collapsed .status-indicators,
+    #header-expandable.collapsed .select-container,
+    #header-expandable.collapsed .button {
+        display: none;
+    }
+
+    /* Conteúdo do cabeçalho em coluna quando expandido */
+    #header-expandable.expanded .status-indicators,
+    #header-expandable.expanded .select-container,
+    #header-expandable.expanded .button {
+        display: block;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    select#clienteSelectModal {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    #clienteSelectSideMenu {
+        width: 150px !important;
+      font-size: 12px;
+    }
+  }
+/* Ocultar o botão de alternância em telas maiores */
+@media (min-width: 831px) {
+    #toggleHeaderButton {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .equipamento-block {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .equipamento-block table {
+        width: auto;
+        /* Permite que a tabela ajuste sua largura automaticamente */
+        min-width: 1000px;
+        /* Define uma largura mínima para a tabela */
+    }
+
+    .equipamento-block th,
+    .equipamento-block td {
+        white-space: nowrap;
+        /* Impede a quebra de linha no conteúdo */
+        overflow: visible;
+        /* Permite que o texto fique visível */
+        text-overflow: clip;
+        /* Remove as reticências */
+        padding: 8px;
+        /* Adiciona espaço interno às células */
+    }
+
+    /* Definições de largura para cada coluna */
+    .equipamento-block th:nth-child(1),
+    /* Conjunto */
+    .equipamento-block td:nth-child(1) {
+        width: 150px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(2),
+    /* Quantidade */
+    .equipamento-block td:nth-child(2) {
+        width: 100px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(3),
+    /* Lote */
+    .equipamento-block td:nth-child(3) {
+        width: 120px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(4),
+    /* Engenharia */
+    .equipamento-block td:nth-child(4) {
+        width: 150px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(5),
+    /* Programação */
+    .equipamento-block td:nth-child(5) {
+        width: 150px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(6),
+    /* PCP */
+    .equipamento-block td:nth-child(6) {
+        width: 150px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(7),
+    /* Produção */
+    .equipamento-block td:nth-child(7) {
+        width: 150px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(8),
+    /* Qualidade */
+    .equipamento-block td:nth-child(8) {
+        width: 150px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(9),
+    /* Obs */
+    .equipamento-block td:nth-child(9) {
+        width: 200px;
+        /* Ajuste conforme necessário */
+    }
+
+    .equipamento-block th:nth-child(10),
+    /* Ações */
+    .equipamento-block td:nth-child(10) {
+        width: 100px;
+        /* Ajuste conforme necessário */
+    }
+
+    .h2, h2 {
+        font-size: 1rem;
+    }
+}
+
+select#clienteSelectSideMenu {
+    width: 230px;
+}

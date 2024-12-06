@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(20, 147, 22), rgb(17, 54, 7));
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    color: white;
+}
+
+a {
+    color: inherit;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.6);
+    flex: 20 0 500px;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: calc(100vh - 125px);
+    margin: 3px;
+    padding: 10px;
+    border-radius: 8px 8px 8px;
+}
+
+
+#logo img {
+    max-width: 100px;
+}
+
+#openMenu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 2000;
+}
+
+#menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    background-color: #575757;
+}
+
+#closeMenu {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.submenu {
+    padding: 10px;
+}
+
+.submenu-content {
+    padding-left: 20px;
+}
+

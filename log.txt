@@ -1,0 +1,6 @@
+[25-Nov-2024 15:56:51 Europe/Berlin] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in C:\xampp\htdocs\CADASTRO\imprimir_etiqueta.php:10
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\imprimir_etiqueta.php on line 10
+[25-Nov-2024 15:57:28 Europe/Berlin] PHP Warning:  Undefined variable $variavel in C:\xampp\htdocs\CADASTRO\imprimir_etiqueta.php on line 9
+[25-Nov-2024 15:57:34 Europe/Berlin] PHP Warning:  Undefined variable $variavel in C:\xampp\htdocs\CADASTRO\imprimir_etiqueta.php on line 9

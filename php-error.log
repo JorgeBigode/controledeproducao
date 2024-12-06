@@ -1,0 +1,66 @@
+[30-Sep-2024 17:58:27 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-60"}
+[30-Sep-2024 17:58:27 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:10:07 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-60"}
+[30-Sep-2024 18:10:07 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:13:45 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-60"}
+[30-Sep-2024 18:13:45 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:14:17 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"6","modelo":"TR-60"}
+[30-Sep-2024 18:14:54 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"6","modelo":"TR-60"}
+[30-Sep-2024 18:45:22 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-80"}
+[30-Sep-2024 18:45:22 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:45:42 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"6","modelo":"TR-60"}
+[30-Sep-2024 18:46:01 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-60"}
+[30-Sep-2024 18:46:01 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:47:47 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-100"}
+[30-Sep-2024 18:47:47 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:48:02 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-80"}
+[30-Sep-2024 18:48:02 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 18:57:14 Europe/Berlin] Dados JSON recebidos: {"idtr_pedido":"16","modelo":"TR-80"}
+[30-Sep-2024 18:57:14 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:56
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(56): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 56
+[30-Sep-2024 19:20:09 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:50
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(50): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 50
+[30-Sep-2024 19:20:47 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:50
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(50): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 50
+[30-Sep-2024 19:20:57 Europe/Berlin] PHP Fatal error:  Uncaught mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`formulario__cadastro`.`pedidos_tr`, CONSTRAINT `ibk_idtr_pedidos` FOREIGN KEY (`idtr_pedido`) REFERENCES `cliente` (`idcliente`) ON DELETE CASCADE) in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php:50
+Stack trace:
+#0 C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php(50): mysqli_stmt->execute()
+#1 {main}
+  thrown in C:\xampp\htdocs\CADASTRO\salvar_detalhes_pedido.php on line 50

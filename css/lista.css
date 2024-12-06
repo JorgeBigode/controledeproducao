@@ -1,0 +1,9 @@
+main {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  flex: 20 0 500px;
+  flex-wrap: wrap;
+  overflow: auto;
+  height: calc(100vh - 150px);
+  margin: 3px;
+}

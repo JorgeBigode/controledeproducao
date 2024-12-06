@@ -1,0 +1,10 @@
+# Arquivos de ambiente
+.env
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

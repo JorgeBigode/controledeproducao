@@ -1,0 +1,43 @@
+.pedido-detalhe p {
+    margin: 3px 0;
+    text-transform: uppercase;
+}
+
+.pedido-detalhe {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pedido-detalhe {
+    background-color: #f8f8f8;
+    color: #333;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.pedido-detalhe h3 {
+    margin-top: 0;
+}
+
+.pedido-detalhe table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 16px;
+    color: black;
+}
+
+.pedido-detalhe th, .pedido-detalhe td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.pedido-detalhe th {
+    background-color: #009879;
+    color: white;
+}
+
+

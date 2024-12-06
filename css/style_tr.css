@@ -1,0 +1,216 @@
+h2 {
+    color: black;
+}
+
+.pedido-modulo {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    z-index: 1000;
+}
+
+.pedido-detalhe {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+}
+
+.pedido-modulo table,
+.pedido-detalhe table {
+    width: 100%;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pedido-modulo table th,
+.pedido-modulo table td,
+.pedido-detalhe table th,
+.pedido-detalhe table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pedido-modulo table th,
+.pedido-detalhe table th {
+    background-color: #009879;
+    color: white;
+}
+
+/* Define as larguras proporcionais das colunas */
+.pedido-modulo table th:nth-child(1), 
+.pedido-modulo table td:nth-child(1),
+.pedido-detalhe table th:nth-child(1), 
+.pedido-detalhe table td:nth-child(1) {
+    width: 10%; /* Coluna 'Modelo' */
+}
+
+.pedido-modulo table th:nth-child(2), 
+.pedido-modulo table td:nth-child(2),
+.pedido-detalhe table th:nth-child(2), 
+.pedido-detalhe table td:nth-child(2) {
+    width: 10%; /* Coluna 'Montagem' */
+}
+
+.pedido-modulo table th:nth-child(3), 
+.pedido-modulo table td:nth-child(3),
+.pedido-detalhe table th:nth-child(3), 
+.pedido-detalhe table td:nth-child(3) {
+    width: 5%; /* Coluna 'Frete' */
+}
+
+.pedido-modulo table th:nth-child(4), 
+.pedido-modulo table td:nth-child(4),
+.pedido-detalhe table th:nth-child(4), 
+.pedido-detalhe table td:nth-child(4) {
+    width: 10%; /* Coluna 'Status' */
+}
+
+.pedido-modulo table th:nth-child(5), 
+.pedido-modulo table td:nth-child(5),
+.pedido-detalhe table th:nth-child(5), 
+.pedido-detalhe table td:nth-child(5) {
+    width: 10%; /* Coluna 'Frequência' */
+}
+
+.pedido-modulo table th:nth-child(6), 
+.pedido-modulo table td:nth-child(6),
+.pedido-detalhe table th:nth-child(6), 
+.pedido-detalhe table td:nth-child(6) {
+    width: 15%; /* Coluna 'Bica' */
+}
+
+.pedido-modulo table th:nth-child(7), 
+.pedido-modulo table td:nth-child(7),
+.pedido-detalhe table th:nth-child(7), 
+.pedido-detalhe table td:nth-child(7) {
+    width: 15%; /* Coluna 'Número de Série' */
+}
+
+.pedido-modulo table th:nth-child(8), 
+.pedido-modulo table td:nth-child(8),
+.pedido-detalhe table th:nth-child(8), 
+.pedido-detalhe table td:nth-child(8) {
+    width: 20%; /* Coluna 'Observação' */
+}
+
+.pedido-modulo table th:nth-child(9), 
+.pedido-modulo table td:nth-child(9),
+.pedido-detalhe table th:nth-child(9), 
+.pedido-detalhe table td:nth-child(9) {
+    width: 15%; /* Coluna 'Ações' */
+}
+
+
+.gerar-relatorio-btn {
+    width: auto;
+    padding: 7px;
+    background-color: #009879;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 10px
+}
+
+.buttons-e-circulos {
+    display: flex;
+    /* Exibe os elementos em linha */
+    align-items: center;
+    /* Alinha verticalmente no centro */
+    gap: 20px;
+    /* Espaçamento entre o botão e os círculos */
+    margin-bottom: 10px;
+    /* Espaço abaixo da linha de botões e círculos */
+}
+
+.circulo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: none; /* Remove borda padrão do botão */
+    background: none; /* Remove fundo padrão do botão */
+    padding: 0; /* Remove padding padrão do botão */
+}
+
+.circulo-1 {
+    background-color: white;
+    /* Ajuste a cor do texto para que seja visível */
+}
+
+.circulo-2 {
+    background-color: #e06666;
+}
+
+.circulo-3 {
+    background-color: #e69138;
+}
+
+.circulo-4 {
+    background-color: #ffff00;
+    /* Ajuste a cor do texto para que seja visível */
+}
+
+.circulo-5 {
+    background-color: #b7e1cd;
+}
+
+.circulo-6 {
+    background-color: #a64d79;
+}
+
+.circulo-1,
+.circulo-2,
+.circulo-3,
+.circulo-4,
+.circulo-5,
+.circulo-6 {
+    border-radius: 50%;
+    /* Faz os elementos serem circulares */
+    width: 30px;
+    /* Largura do círculo */
+    height: 30px;
+    /* Altura do círculo */
+    display: flex;
+    /* Permite centralizar texto */
+    justify-content: center;
+    /* Centraliza horizontalmente o texto */
+    align-items: center;
+    color: white;
+    /* Ajusta a cor do texto */
+}
+
+.status-aguardando {
+    background-color: #ffffff !important;
+}
+
+.status-programacao {
+    background-color: #e06666 !important;
+}
+
+.status-producao {
+    background-color: #e69138 !important;
+}
+
+.status-patio {
+    background-color: #FFFF00 !important;
+}
+
+.status-entregue {
+    background-color: #B7E1CD !important;
+}
+
+.status-cancelada {
+    background-color: #A64D79 !important;
+}
